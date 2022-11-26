@@ -1,0 +1,59 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.repo {
+  display: flex;
+  flex-direction: column;
+  background-color: $lightGrey;
+  width: 205px;
+  height: 88px;
+  border-radius: 8px;
+  padding: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  &__nameRateBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__name {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    color: $black;
+    line-height: 24px;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__rate {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    color: $black;
+    line-height: 24px;
+    margin: 0;
+    margin-left: 4px;
+  }
+  &__forks {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    color: $black;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 8px;
+  }
+  &__rateBlock {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .repo {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,33 @@
+import React from "react";
+
+function Search() {
+  return (
+    <svg
+      width="18"
+      height="19"
+      viewBox="0 0 18 19"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <ellipse
+        cx="8.66439"
+        cy="8.94952"
+        rx="7.66439"
+        ry="7.94952"
+        stroke="#6B7FA3"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13.9951 14.8914L17 18"
+        stroke="#6B7FA3"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+}
+
+export default Search;

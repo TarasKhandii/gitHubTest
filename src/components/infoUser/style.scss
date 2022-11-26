@@ -1,0 +1,69 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.infoUser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__block {
+    margin-left: 16px;
+  }
+  &__title {
+    color: $black;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 6px;
+    line-height: 28px;
+  }
+  &__date {
+    margin: 0;
+    padding: 0;
+    color: $black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    margin-bottom: 16px;
+    line-height: 24px;
+  }
+  &__image {
+    width: 144px;
+    height: 144px;
+    margin-right: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .infoUser {
+    margin: 0 5px 50px 5px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.loader {
+  flex: 1;
+}
+.btnBlock {
+  display: flex;
+  justify-content: flex-end;
+}
+.btnPag {
+  background-color: burlywood;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  width: 150px;
+  height: 35px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.btnPag:hover {
+  background-color: rosybrown;
+  color: $white;
+}
+.btnPag:active {
+  background-color: brown;
+}
