@@ -1,0 +1,27 @@
+.mainPage {
+  width: 82.8%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.mainPageBlock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 65px;
+  justify-content: space-between;
+}
+
+@media (max-width: 1445px) {
+  .mainPageBlock {
+  justify-content: center;
+
+  }
+}
+
+@media (max-width: 510px) {
+  .mainPageBlock {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

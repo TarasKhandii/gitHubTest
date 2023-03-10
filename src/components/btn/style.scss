@@ -1,0 +1,23 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+.btn {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  color: $white;
+  max-width: 180px;
+  height: 48px;
+  padding: 0;
+  background-color: $purple;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 12px 49.5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: orangered;
+}
+.btn:active {
+  background-color: brown;
+}

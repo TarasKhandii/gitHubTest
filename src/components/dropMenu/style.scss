@@ -1,0 +1,92 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.dropMenu {
+  position: relative;
+  background-color: $blueDropMenu;
+  width: 205px;
+  height: 52px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 19.5px;
+  &__text {
+    color: $skyBlue;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  & > button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: $skyBlue;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    align-items: center;
+    cursor: pointer;
+    & > svg {
+      margin-left: 10px;
+      transform: rotate(0deg);
+      transition: 0.3s ease all;
+    }
+  }
+  & > ul {
+    background-color: $blueDropMenu;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 24px;
+    right: 40px;
+    transition: 0.3s ease all;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55px;
+    border-radius: 8px;
+
+    & > li {
+      list-style-type: none;
+      cursor: pointer;
+      width: 20px;
+      margin: 2px;
+      color: $skyBlue;
+      font-size: 14px;
+      font-family: Inter;
+      font-weight: 400;
+    }
+  }
+  &Open {
+    & > ul {
+      height: 50px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+      & > li {
+        display: flex;
+        justify-content: center;
+        transition: 0.5s ease all;
+        width: 50%;
+        &:hover {
+          background-color: $purple;
+          width: 100%;
+        }
+      }
+    }
+    & > button {
+      & > svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

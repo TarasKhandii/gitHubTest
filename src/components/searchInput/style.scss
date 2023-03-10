@@ -1,0 +1,38 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+.inputBlock {
+  background-color: $blueDropMenu;
+  border-radius: 8px;
+  width: 205px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: $skyBlue;
+  width: 82%;
+  height: 30px;
+  padding-left: 16px;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+}
+input::placeholder {
+  color: $skyBlue;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+}
+@media (max-width: 570px) {
+  .inputBlock {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
